@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataxx Game</title>
+    <link rel="stylesheet" href="../style/game.css">
+</head>
+<body>
+    <div id="page-container">
+        <div class="side-text left-text">
+            <header class="players-history">
+                <div>
+                    <h2 style="text-align: center; margin-top: 5px; color: #333;">Time left</h2>
+                    <h2 style="text-align: center; margin-top: -5px; color: #333;" id="time-left">15</h2>
+                </div>
+                <h2 style="color: blue;">Blue: <span style="color: blue;" id="player1"></span><span id="player1turn" style="background-color: blue;"></span> </h2>
+                <h2 style="color: red;">Red: <span style="color: red;" id="player2"></span><span id="player2turn" style="background-color: red;"></span></h2>
+            </header>
+            
+            <h2 style="text-align: center; color: #333;"><span id="victory-text"></span></h2>
+            <div class="left-buttons">
+                <button id="abandon-game-button">Abandon Game</button>
+                <br>
+                <button id="menu-game-button">Back to menu</button>
+            </div>
+            <header class="players-history">
+                <h2 style="text-align: center; margin-top: 5px;">History</h2>
+                <p id="player1-history">Player 1: <b></b>0</b> win</p>
+                <p id="player2-history">Player 2: <b>0</b> win</p>
+                <p id="players-history-vs">Player1 <b>0</b> VS <b>0</b> Player2</span></p>
+            </header>
+            <br>
+        </div>
+        <div id="game-container">
+            <img src="../img/ataxx.png" alt="Ataxx Game">
+            <div id="game-board"></div>
+        </div>
+
+        <div class="side-text right-text">
+            <h2>Πώς να Παίξετε Ataxx</h2>
+            <p>Το Ataxx είναι ένα παιχνίδι στρατηγικής για δύο παίκτες που παίζεται σε έναν πίνακα 7x7. Ο στόχος του παιχνιδιού είναι να καταφέρετε να έχετε την πλειοψηφία των κομματιών στον πίνακα στο τέλος του παιχνιδιού, μετατρέποντας όσο το δυνατόν περισσότερα από τα κομμάτια του αντιπάλου.</p>
+            <h3>Κανόνες Παιχνιδιού:</h3>
+            <ul>
+                <li>Κάθε παίκτης αρχίζει με δύο κομμάτια του είτε μπλέ είτε κόκκινα. Το παιχνίδι ξεκινά με τα τέσσερα κομμάτια να τοποθετούνται στις τέσσερις γωνίες του πίνακα, με τα κίτρινα στην επάνω αριστερή και κάτω δεξιά γωνία και τα κόκκινα στις άλλες δύο γωνίες. Το κίτρινο παίζει πρώτο.</li>
+                <br>
+                <li>Κατά τη διάρκεια του γύρου τους, οι παίκτες μετακινούν ένα από τα κομμάτια τους είτε ένα είτε δύο τετράγωνα σε οποιαδήποτε κατεύθυνση σε ένα κενό τετράγωνο. Οι διαγώνιες αποστάσεις είναι ίδιες με τις ορθογώνιες αποστάσεις, π.χ. είναι νόμιμο να μετακινηθείτε σε ένα τετράγωνο που απέχει δύο θέσεις τόσο κάθετα όσο και οριζόντια.</li>
+                <br>
+                <li>Ένα κομμάτι μπορεί επίσης να μετακινηθεί σε L-σχήμα δύο τετραγώνων, όμοιο με το άλμα του ιππότη στο σκάκι.</li>
+                <br>
+                <li>Εάν ο προορισμός είναι δίπλα στην αρχική θέση, τότε δημιουργείται ένα νέο κομμάτι στο τετράγωνο προορισμού. Διαφορετικά, το κομμάτι από την αρχική θέση μετακινείται στον προορισμό.</li>
+                <br>
+                <li>Μετά τη μετακίνηση, όλα τα κομμάτια του αντιπάλου που είναι δίπλα στο τετράγωνο του προορισμού μετατρέπονται στο χρώμα του παίκτη που κινείται.</li>
+                <br>
+                <li>Οι παίκτες πρέπει να κάνουν κίνηση εκτός αν δεν υπάρχει άλλη έγκυρη κίνηση, οπότε πρέπει να περάσουν.</li>
+                <br>
+                <li>Το παιχνίδι τελειώνει όταν γεμίσουν όλοι οι τετράγωνοι ή αν ένας από τους παίκτες δεν έχει πλέον κομμάτια. Ο παίκτης με τα περισσότερα κομμάτια κερδίζει.</li>
+            </ul>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/game.js"></script>
+</body>
+</html>

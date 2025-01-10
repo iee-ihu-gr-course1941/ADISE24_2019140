@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow: hidden;
+}
+
+.start-container img {
+    width: 300px;
+}
+
+.start-container {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #00dae3;
+    background-image: url('../img/noise.png');
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #cea348;
+}
+
+.start-container h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.start-container label {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+}
+
+.start-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #cea348;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.start-container button:hover {
+    background-color: #832e2c;
+}
+
+.additional-buttons {
+    width: 350px;
+    height: 55px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.additional-buttons button {
+    width: 250px;
+    height: 50px;
+}
+
+#start-game {
+    background-color: #a04441;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#continue-game:hover {
+    background-color: #8d3c39;
+}
+
+#continue-game {
+    background-color: #59a051;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#continue-game:hover {
+    background-color: #4d8947;
+}
+
+#howtoplay-game-button {
+    background-color: #3a4876;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#howtoplay-game-button:hover {
+    background-color: #313c62;
+}
+
+#scoreboard-game-button {
+    background-color: #ddae51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#scoreboard-game-button:hover {
+    background-color: #b69045;
+}
+
+#back-button  {
+    width: 150px;
+    height: 50px;
+    background-color: #59a051;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#back-button :hover {
+    background-color: #4a8643;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #007bff;
+    z-index: 2;
+    border-bottom: 2px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #15a5ab;
+}
+
+.scrollable-container {
+    position: relative;
+    width: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 0px solid #ccc;
+    margin: 10px 0;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

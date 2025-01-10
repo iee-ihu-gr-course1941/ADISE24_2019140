@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataxx - Start Game</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="start-container" id="main-container">
+        <img src="./img/ataxx.png" alt="Ataxx Game">
+        <p style="margin-top: -46px; margin-bottom: 35px;"> <b>By Dimitris Pliakis</b></p>
+
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" placeholder="Enter Name">
+
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" placeholder="Enter Name">
+
+        <label id="error-msg" style="text-align: center; color: red; text-shadow: 0 0 black; opacity: 0%;">Please enter
+            all the fields!</label>
+
+        <div>
+            <div class="additional-buttons">
+                <button id="start-game">Start Game</button>
+                <button id="continue-game" disabled>Continue</button>
+            </div>
+            <div class="additional-buttons">
+                <button id="howtoplay-game-button">How to play</button>
+                <button id="scoreboard-game-button">Scoreboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
