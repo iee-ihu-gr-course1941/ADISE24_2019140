@@ -14,3 +14,35 @@ To play the game, click [here](https://users.it.teithe.gr/~iee2019140/adise/).
 - Εάν ο προορισμός είναι δίπλα στην αρχική θέση, τότε δημιουργείται ένα νέο κομμάτι στο τετράγωνο προορισμού. Διαφορετικά, το κομμάτι από την αρχική θέση μετακινείται στον προορισμό.
 - Μετά τη μετακίνηση, όλα τα κομμάτια του αντιπάλου που είναι δίπλα στο τετράγωνο του προορισμού μετατρέπονται στο χρώμα του παίκτη που κινείται.
 - Το παιχνίδι τελειώνει όταν γεμίσουν όλοι οι τετράγωνοι ή αν ένας από τους παίκτες δεν έχει πλέον κομμάτια. Ο παίκτης με τα περισσότερα κομμάτια κερδίζει.
+
+---
+
+## API Documentation
+
+### API Endpoints
+
+- **`abandon_game.php`**  
+  Abandons an ongoing game. Fetches the `game_id` from the session and updates the games table accordingly.
+
+- **`complete_game.php`**  
+  Completes a game. Retrieves the `game_id` from the session and the `winner` from a POST request, then updates the games table with the result.
+
+- **`game_history.php`**  
+  Provides the overall win history of both players as well as their head-to-head results. Retrieves the `game_id` from the session.
+
+- **`get_game.php`**  
+  Fetches the details of the current game from the database using the `game_id` from the session.
+
+- **`players_history.php`**  
+  Returns a list of all players along with their total wins from the `Players` table.
+
+- **`sql.php`**  
+  A utility script used by all other scripts to execute SQL queries on the database and return the results.
+
+- **`start_game.php`**  
+  Creates a new game. Accepts `player1_name` and `player2_name` via a POST request and sets the `game_id` in the session.
+
+- **`update_game.php`**  
+  Updates the current state of the game. Fetches the `game_id` from the session, and updates the `board` and `currentPlayer` using data from a POST request.
+
+---
