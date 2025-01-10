@@ -17,6 +17,21 @@ To play the game, click [here](https://users.it.teithe.gr/~iee2019140/adise/).
 
 ---
 
+## Project Structure
+
+The project is organized into several folders to ensure a clear and modular structure:
+
+- **`api/`**: Contains PHP scripts for managing game functionality, including game creation, updates, and history.
+- **`img/`**: Stores image assets like game logos and background images.
+- **`pages/`**: HTML pages for the game interface and instructions.
+- **`scripts/`**: JavaScript files for game logic and interactivity.
+- **`style/`**: CSS files for styling the game and its pages.
+- **Root Files**: Includes the main `index.html` file, a demo SQL script (`demosql.php`), and the `README.md` file.
+
+Each directory is designed to separate concerns, making it easier to manage and develop the project.
+
+---
+
 ## API Documentation
 
 ### API Endpoints
